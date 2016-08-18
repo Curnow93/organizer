@@ -1,0 +1,146 @@
+$color1: #3A3F61;
+$color2: #494278;
+$color3: #513C6E;
+$color4: #425778;
+$color5: #3C5D6E;
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -box-sizing: border-box;
+    line-height: 1.2em;
+}
+
+h1, h2, h3, h4, h5, h6, p, a{
+    font-size: 12px;
+    line-height: 1.4em;
+    color: white;
+}
+
+body{
+    width: 100%;
+}
+
+.site{
+/////////////////////////#HEADER//////
+    &-header{
+        background-color: $color1;
+        overflow: hidden;
+        position: relative;
+        height: 100px;
+        width: 100%;
+        border-bottom: 1px solid black;
+        line-height: 20px;
+        > div{
+            width: 33.3333%;
+            height: 100%;
+            text-align: center;
+            border-right: 2px solid black;
+            display: inline-block;
+            float: left;
+            padding: 30px;
+        }
+    }
+    &-dev{
+        padding: 0 10px;
+        img{
+            float: right;
+        }
+        .info{
+            float: left;
+            margin: 10px 0;
+        }
+    }
+    &-nav{
+        padding: 10px 0;
+        ul{
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            li{
+                //display: inline-block;
+                position: relative;
+            }
+        }
+    }
+//////////////////#SLIDER/////////
+    &-slider{
+        width: 100%;
+        height: 600px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        &-nav{
+            width: 20px;
+            display: none;
+        }
+    }
+/////////////////#CALENDAR//////
+    &-calendar{
+            min-height: 800px;
+            width: 100%;
+            float: left;
+            background-color: grey;
+            border: 2px solid black;
+            padding: 40px 200px;
+        }
+/////////////////#MAIN/////////
+    &-main{
+        min-height: 200px;
+        padding: 60px 140px;
+        background-color: $color1;
+        border-top: 1px solid black;
+        .intro{
+            height: 200px;
+            margin: 0 auto;
+            width: 98%;
+            float: left;
+            background-color: $color5;
+            border-radius: 3px;
+            border: 2px solid black;
+            padding: 10px 30px;
+        }
+        .tabs{
+            display: inline-block;
+            width: 49%;
+            height: 200px;
+            border: 2px solid black;
+            border-radius: 3px;
+            overflow: hidden;
+            padding: 30px;
+            margin: 20px 2px;
+            background-color: $color5;
+        }
+    }
+///////////#FOOTER//////////////////////
+    &-footer{
+        background-color: $color4;
+        width: 100%;
+        height: 400px;
+        padding: 60px;
+        overflow: hidden;
+        border-top: 1px solid black;
+        &-inner{
+            width: 60%;
+            min-height: 300px;
+            background-color: $color3;
+            margin: auto auto;
+            border: 2px solid black;
+            border-radius: 3px;
+            padding: 20px;
+            div{
+                width: 33.333%;
+                height: 70%;
+                float: left;
+                margin: 20px 0;
+                padding: 10px;
+            }
+            img{
+                height: 120px;
+                width: 120px;
+                float: right;
+            }
+        }
+    }
+}
