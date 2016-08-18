@@ -1,5 +1,3 @@
-$(document).ready(function{
-    alert("Ready!");
+$(document).ready(function(){
     $(".dropdown").on("click").alert("Clicked!");
-
 });
