@@ -2,7 +2,8 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  line-height: 1.2em; }
+  line-height: 1.2em;
+  text-decoration: none; }
 
 h1, h2, h3, h4, h5, h6, p, a {
   font-size: 12px;
@@ -112,30 +113,33 @@ body {
     background-color: #3C5D6E; }
     .site-main .tabs div {
       float: left;
-      width: 60%; }
-    .site-main .tabs .logo {
+      width: 70%;
       height: 100%;
-      width: 30%;
+      padding: 12px;
+      border: 2px solid white;
+      background-color: #4e798f; }
+    .site-main .tabs .logo {
+      height: 120px;
+      width: 120px;
       float: right;
+      border: 2px solid black;
       background-image: url(../img/icons1.png); }
     .site-main .tabs .calendarlogo {
-      background: url("../img/icons1.png") no-repeat -653px -497px;
-      width: 120px;
-      height: 120px; }
+      background: url("../img/icons1.png") no-repeat -635px -487px; }
     .site-main .tabs .musiclogo {
-      background-image: url("../img/icons1.png"); }
+      background: url("../img/icons1.png") no-repeat -377px -118px; }
     .site-main .tabs .fblogo {
-      background-image: url("../img/icons1.png"); }
+      background: url("../img/icons1.png") no-repeat -255px 0px; }
     .site-main .tabs .watchlogo {
-      background-image: url("../img/icons1.png"); }
+      background: url("../img/icons1.png") no-repeat -1025px -490px; }
     .site-main .tabs .checklogo {
-      background-image: url("../img/icons1.png"); }
+      background: url("../img/icons1.png") no-repeat -640px 0px; }
     .site-main .tabs .alarmlogo {
-      background-image: url("../img/icons1.png"); }
+      background: url("../img/icons1.png") no-repeat -385px -122px; }
     .site-main .tabs .emaillogo {
-      background-image: url("../img/icons1.png"); }
+      background: url("../img/icons1.png") no-repeat 0px -240px; }
     .site-main .tabs .addonlogo {
-      background-image: url("../img/icons1.png"); }
+      background: url("../img/icons1.png") no-repeat -255px -492px; }
 .site-footer {
   background-color: #425778;
   width: 100%;
@@ -150,16 +154,22 @@ body {
     margin: auto auto;
     border: 2px solid black;
     border-radius: 3px;
-    padding: 20px; }
+    padding: 20px;
+    font-size: 15px; }
     .site-footer-inner div {
       width: 33.333%;
       height: 70%;
       float: left;
       margin: 20px 0;
-      padding: 10px; }
+      padding: 15px;
+      border: 1px solid white;
+      background-color: #b6b2d4;
+      text-align: justify; }
+      .site-footer-inner div .textarea {
+        clear: right; }
     .site-footer-inner img {
-      height: 120px;
-      width: 120px;
+      height: 50px;
+      width: 50px;
       float: right; }
 
 /*# sourceMappingURL=style.css.map */

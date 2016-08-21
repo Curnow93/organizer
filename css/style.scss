@@ -9,6 +9,7 @@ $color5: #3C5D6E;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     line-height: 1.2em;
+    text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6, p, a{
@@ -148,39 +149,42 @@ body{
             background-color: $color5;
             div{
                 float: left;
-                width: 60%;
+                width: 70%;
+                height: 100%;
+                padding: 12px;
+                border: 2px solid white;
+                background-color: lighten($color5, 10%);
             }
             .logo{
-                height: 100%;
-                width: 30%;
+                height: 120px;
+                width: 120px;
                 float: right;
+                border: 2px solid black;
                 background-image:url(../img/icons1.png);
             }
             .calendarlogo{
-                background: url('../img/icons1.png') no-repeat -653px -497px;
-	           width: 120px;
-                height: 120px;
+                background: url('../img/icons1.png') no-repeat -635px -487px;
             }
             .musiclogo{
-                background-image:url("../img/icons1.png");
+                background: url('../img/icons1.png') no-repeat -377px -118px;
             }
             .fblogo{
-                background-image:url("../img/icons1.png");
+                background: url('../img/icons1.png') no-repeat -255px 0px;
             }
             .watchlogo{
-                background-image:url("../img/icons1.png");
+                background: url('../img/icons1.png') no-repeat -1025px -490px;
             }
             .checklogo{
-                background-image:url("../img/icons1.png")
+                background: url('../img/icons1.png') no-repeat -640px 0px;
             }
             .alarmlogo{
-                background-image:url("../img/icons1.png")
+                background: url('../img/icons1.png') no-repeat -385px -122px;
             }
             .emaillogo{
-                background-image:url("../img/icons1.png")
+                background: url('../img/icons1.png') no-repeat 0px -240px;
             }
             .addonlogo{
-                background-image:url("../img/icons1.png")
+                background: url('../img/icons1.png') no-repeat -255px -492px;
             }
         }
     }
@@ -200,16 +204,23 @@ body{
             border: 2px solid black;
             border-radius: 3px;
             padding: 20px;
+            font-size: 15px;
             div{
                 width: 33.333%;
                 height: 70%;
                 float: left;
                 margin: 20px 0;
-                padding: 10px;
+                padding: 15px;
+                border: 1px solid white;
+                background-color: lighten($color2, 40%);
+                text-align: justify;
+                .textarea{
+                    clear: right;
+                }
             }
             img{
-                height: 120px;
-                width: 120px;
+                height: 50px;
+                width: 50px;
                 float: right;
             }
         }
