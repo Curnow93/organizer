@@ -1,0 +1,5 @@
+Sync time from the internet and store in variable
+
+When user clicks start button
+    Start stopwatch:
+        

@@ -1,0 +1,39 @@
+/* Stopwatch Psuedocode
+
+Method 1{
+Starting point from 00:00:00
+Finishing point at 24:00:00
+}
+
+Method 2{
+Sync time from internet
+Convert time number to variable
+When user clicks start
+                        save the starting time as a variable
+                        start counting
+                        output current time - starting time (time running)
+
+}
+
+
+Start timer when user clicks start
+    Increment time by counting in seconds
+    Stop when time reaches 24:00:00
+    Beep every hour 
+
+Stop timer when user clicks stop
+    When user clicks stop 
+                          save the time to memory
+                          reset the time at 00:00:00
+    
+Pause timer when user clicks pause
+    When user clicks pause
+                          stop incrementing time
+                              
+
+Reset timer when user clicks reset
+    When user clicks reset
+                            stop incrementing time
+                            reset time at 00:00:00
+
+*/

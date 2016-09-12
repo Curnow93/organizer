@@ -12,7 +12,7 @@ $color5: #3C5D6E;
     text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6, p, a{
+h1, h2, h3, h4, h5, h6, p, a, ul, li{
     font-size: 12px;
     line-height: 1.6em;
     color: white;
@@ -21,6 +21,7 @@ h1, h2, h3, h4, h5, h6, p, a{
 body{
     width: 100%;
     background-color: $color1;
+    color: white;
 }
 
 .site{
@@ -80,23 +81,39 @@ body{
     }
 //////////////////#SLIDER/////////
     &-slider{
-        margin: 0 auto;
-        width: 100%;
+        margin: 100px auto;
+        width: 80%;
         height: 600px;
-        img{
+        &-display{
             width: 100%;
-            height: 100%;
+            height: 80%;
+            border-radius: 4px;
+            border: 2px solid white;
+            img{
+                width: 100%;
+                height: 100%;
+            }
         }
         &-nav{
-            width: 20px;
-            display: none;
+            margin: 20px auto;
+            width: 200px;
+            height: 40px;
+            background-color: $color3;
+            border: 2px solid white;
+            padding: 10px 0;
+            p{
+                float: left;
+                width: 50%;
+                height: 100%;
+                text-align: center;
+            }
         }
     }
-/////////////////#CALENDAR//////
-    &-calendar{
+/////////////////#CONTENT//////
+    &-content{
             min-height: 800px;
             width: 100%;
-            background-color: gray;
+            background-color: $color4;
             border: 1px solid black;
             padding: 40px 200px;
         nav{
@@ -115,6 +132,81 @@ body{
             }
         }
         }
+    
+/////////////////#RADIO////////
+    
+    &-radio{
+        background-color: lighten($color4, 10%);
+        width: 100%;
+        padding: 30px;
+        border: 1px solid white;
+        
+    }
+    
+/////////////////#STOPWATCH/////
+    &-stopwatch{
+        padding: 20px;
+        .time{
+            height: 400px;
+            background-color: black;
+            border: 3px solid white;
+            color: #39FF14;
+            margin: 20px auto;
+            .clock{
+                height: 75%;
+                width: 75%;
+                border: 1px solid white;
+                float: left;
+                font-size: 120px;
+                text-align: center;
+                padding: 80px 0;
+            }
+            .recorded{
+                height: 75%;
+                width: 25%;
+                border: 1px solid white;
+                float: right;
+                text-align: center;
+                padding: 20px;
+                overflow: hidden;
+                li{
+                    font-size: 13px;
+                    margin: 5px 0;
+                }
+            }
+            .started{
+                float: left;
+                width: 40%;
+            }
+            .finished{
+                width: 40%;
+                float: left;
+            }
+            .diff{
+                float: left;
+                width: 20%;
+            }
+            .indicator{
+                height: 25%;
+                width: 100%;
+                border: 1px solid white;
+                clear: both;
+                ul{
+                    height: 100%;
+                    border: 1px solid black;
+                    li{
+                        width: 25%;
+                        height: 100%;
+                        padding: 35px 0;
+                        display: inline;
+                        float: left;
+                        text-align: center;
+                        border: 1px solid white;
+                    }
+                }
+            }
+        }
+    }
 /////////////////#MAIN/////////
     &-main{
         min-height: 200px;

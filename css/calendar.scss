@@ -1,0 +1,22 @@
+&-calendar{
+            min-height: 800px;
+            width: 100%;
+            background-color: gray;
+            border: 1px solid black;
+            padding: 40px 200px;
+        nav{
+            height: 40px;
+            background-color: $color4;
+            ul{
+                height: 100%;
+                li{
+                    display: inline;
+                    float: left;
+                    width: 8.33333%;
+                    height: 100%;
+                    padding: 10px 4px;
+                    border: 1px solid white;
+                }
+            }
+        }
+        }

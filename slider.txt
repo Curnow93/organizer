@@ -1,0 +1,30 @@
+//Slider Psuedocode
+
+Store images in an array
+Set slideNumber var to 1
+
+SetInterval Function:
+    After 2 seconds:
+        Hide current image of Array
+        If image is last of array:
+            Load first Image
+        If image is not last of array:
+            Load next image of array
+            increment slidenumber
+    nextImage Function:
+        Hide current image of array
+        If image is last of array:
+            Load first Image
+        If image is not last of array:
+            Load next image of array
+    previousImage Function:
+        Hide current image of array
+        If image is first of array:
+            Load last image of array
+        If image is not first of array:
+            Load previous image of array
+            
+appendImage Function:
+    
+
+    
