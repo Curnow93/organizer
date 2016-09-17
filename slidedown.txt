@@ -1,0 +1,12 @@
+//slideDown Menu Pseudocode
+Store menu bar names in array
+Append each menu item to same position on menu as array
+When user hovers over menu bar
+    Highlight menu bar
+    Slide down down rest of list
+        Use setInterval function to trigger slides after each other
+When user clicks on a menu tab
+    Redirect user to that page
+    Move menu tab to first of array
+    Append clicked menu tab to the top of list
+    

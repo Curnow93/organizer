@@ -17,14 +17,21 @@ $(document).ready(function(){
     var result;
     var startAppend = 0;
     var finishAppend = 0;
+    var alarmTime = [];
     
     setInterval(function() {
         time += 1000;
+        console.log(time);
         timeFormat = moment(time).format("LTS");
         console.log(timeFormat);
         $(".clock .lts").remove();
         $(".clock").prepend("<p class='lts'>" + timeFormat + "</p>");
     }, 1000);
+    
+    $(".clock").on("click", function(){
+        var alarm = prompt("Set alarm clock:" , "");
+        //if(alarm > )
+    });
     
     $(".start").on("click", function(){
         $(this).parent().children().removeAttr("style");

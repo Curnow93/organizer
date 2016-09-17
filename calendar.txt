@@ -1,0 +1,41 @@
+//calendar pseudocode
+
+Sync date from internet and store in variable;
+Append Current date to header
+Create month variable
+Create date variable
+
+If month is equal to case statement:
+    Hide previous Calendar Month
+    Set MonthDays Variable
+    Set StartingDay Variable
+    Append New Calendar Month
+        Use while loop to append date box until MonthDays is reached
+            Check StartingDay of Month
+            Create blank cells until day is reached
+            When Sunday is reached (i == (7 || 14 || 21 || 28))
+                Append next box to next row
+    Highlight Calendar on Menu
+    
+If date is equal to case statement:
+    Unhighlight previous date box of month
+    Highlight date box of month
+    
+When user clicks on date box of month:
+    Pop out prompt
+    Store contents of prompt in variable
+    Append variable to date box
+        IF user clicks "Add to calendar"
+            IF "set alarm" is selected & alarm input time is greater than 00:00 and less than 24:00
+                Store text to text array
+                Store time to time array
+                Append array cell text to box
+                Append array cell time to box
+            ELSE IF message is null
+                Alert "Enter Message"
+            ELSE IF time is less than 00:00 OR greater than 24:00
+                Alert "Enter time"
+    
+When user clicks month on Menu
+    Hide current calendar Month
+    Append New Calendar Month

@@ -1,0 +1,19 @@
+//checklist psuedocode
+
+When user clicks on input box:
+    Change background color from grey to white
+When user clicks send:
+    Check the input text is not empty
+    Ask priority of item (A-E)
+        Create new tick box
+        If Priority A, B etc...
+            Append the item to the (A, B, C etc)list in same li as tickbox
+        Clear the input box
+When user clicks tickbox
+    Prompt remove list item or strikethrough it
+    If strikethrough is clicked
+        Strikethrough text
+    If remove is clicked
+        Remove list item
+/*  If (creation date + 2 weeks) == current day
+        Change colour of list item to red
